@@ -20,6 +20,10 @@
     @Html.Kendo().DeferredScripts();
 
     @RenderSection("scripts", required: false)
+
+    <script>
+        kendo.setDefaults('iconType', 'font');
+    </script>
 </head>
 <body>
     <div class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">

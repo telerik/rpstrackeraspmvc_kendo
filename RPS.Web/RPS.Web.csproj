@@ -259,6 +259,9 @@
     <Reference Include="Telerik.FontIcons, Version=1.0.0.0, Culture=neutral, PublicKeyToken=20b4b0547069c4f8, processorArchitecture=MSIL">
       <HintPath>..\packages\Telerik.FontIcons.1.8.0\lib\netstandard1.1\Telerik.FontIcons.dll</HintPath>
     </Reference>
+    <Reference Include="Telerik.SvgIcons, Version=1.0.0.0, Culture=neutral, PublicKeyToken=20b4b0547069c4f8, processorArchitecture=MSIL">
+      <HintPath>..\packages\Telerik.SvgIcons.1.9.0\lib\netstandard1.1\Telerik.SvgIcons.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.Abstractions, Version=5.11.7.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
       <HintPath>..\packages\Unity.5.11.10\lib\net48\Unity.Abstractions.dll</HintPath>
     </Reference>
