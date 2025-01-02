@@ -5,9 +5,9 @@
     <h1 class="h2">Backlog</h1>
     <div class="btn-toolbar mb-2 mb-md-0">
         <div class="btn-group mr-2">
-            <button onclick="location.href = '@(Url.Action("Items", "Backlog", new { preset = "My" }))'">My Items</button>
-            <button onclick="location.href = '@(Url.Action("Items", "Backlog", new { preset = "Open" }))'">Open Items</button>
-            <button onclick="location.href = '@(Url.Action("Items", "Backlog", new { preset = "Closed" }))'">Done Items</button>
+            <button class="btn btn-light" onclick="location.href = '@(Url.Action("Items", "Backlog", new { preset = "My" }))'">My Items</button>
+            <button class="btn btn-light" onclick="location.href = '@(Url.Action("Items", "Backlog", new { preset = "Open" }))'">Open Items</button>
+            <button class="btn btn-light" onclick="location.href = '@(Url.Action("Items", "Backlog", new { preset = "Closed" }))'">Done Items</button>
         </div>
 
         <div class="btn-group mr-2">
@@ -15,7 +15,7 @@
                 .Name("btnAdd")
                 .Icon("plus")
                 .Content("Add")
-                .HtmlAttributes(new { @class = "k-primary", onclick = "location.href = '" + Url.Action("Create", "Backlog") + "'" })
+                .HtmlAttributes(new { @class = "distance-left", onclick = "location.href = '" + Url.Action("Create", "Backlog") + "'" })
              )
         </div>
 
