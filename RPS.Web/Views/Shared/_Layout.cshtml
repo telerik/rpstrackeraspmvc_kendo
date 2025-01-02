@@ -4,6 +4,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RPS Project Tracker</title>
+    <link href="https://unpkg.com/%40progress/kendo-font-icons/dist/index.css" rel="stylesheet" type="text/css" />
+
     @Styles.Render("~/Content/css")
     @Styles.Render("~/Content/kendocss")
 
@@ -12,12 +14,17 @@
     @RenderSection("styles", required: false)
 
     @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
-    @Scripts.Render("~/bundles/kendojs")
+    @*@Scripts.Render("~/bundles/bootstrap")*@
 
-    <script src="~/Scripts/kendo/2023.2.718/kendo.all.min.js"></script>
+    <link href="@Url.Content("~/Content/bootstrap.min.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/Site.css")" rel="stylesheet" type="text/css" />
+    <script src="@Url.Content("~/Scripts/bootstrap.min.js")"></script>
+    <script src="@Url.Content("~/Scripts/jquery-3.7.1.min.js")"></script>
+    <script src="https://unpkg.com/jszip/dist/jszip.min.js"></script>
+    <script src="@Url.Content("~/Scripts/kendo/2024.4.1112/kendo.all.min.js")"></script>
+    <script src="@Url.Content("~/Scripts/kendo/2024.4.1112/kendo.aspnetmvc.min.js")"></script>
 
-    @Html.Kendo().DeferredScripts();
+    @*@Html.Kendo().DeferredScripts();*@
 
     @RenderSection("scripts", required: false)
 
