@@ -25,6 +25,24 @@
     margin-bottom: 15px;
 }
 
+.input-group-prepend {
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.form-row.align-items-center {
+    display: inline-flex;
+    width: 100%;
+}
+
+    .form-row.align-items-center > .btn-primary {
+        margin-left: 20px;
+    }
+
+.chitchat-item {
+    display: inline-flex;
+}
+
 /*
    * Sidebar
    */
@@ -125,8 +143,9 @@
 
 .li-avatar {
     background-color: #eeeeee;
-    width: 40px;
-    height: 40px;
+    margin-right: 10px;
+    width: 60px;
+    height: 60px;
 }
 
 .li-estimate {
