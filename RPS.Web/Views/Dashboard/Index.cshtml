@@ -45,7 +45,7 @@
 
             <div class="btn-group mr-2">
                 @(Html.Kendo().Button()
-                                            .Name("btnFilterMonths3").Content("3 Months").Icon("calendar").Deferred()
+                                            .Name("btnFilterMonths3").Content("3 Months").Icon("calendar")
                                             .HtmlAttributes(new { @class = ViewBag.months == 3 ? "k-state-active" : "" })
                                             .Events(events =>
                                             {
@@ -53,7 +53,7 @@
                                             })
                 )
 
-                @(Html.Kendo().Button().Name("btnFilterMonths6").Content("6 Months").Icon("calendar").Deferred()
+                @(Html.Kendo().Button().Name("btnFilterMonths6").Content("6 Months").Icon("calendar")
                                             .HtmlAttributes(new
                                             {
                                                 @class = ViewBag.months == 6 ? "k-state-active" : "",
@@ -61,7 +61,7 @@
                                             })
                 )
 
-                @(Html.Kendo().Button().Name("btnFilterMonths12").Content("1 Year").Icon("calendar").Deferred()
+                @(Html.Kendo().Button().Name("btnFilterMonths12").Content("1 Year").Icon("calendar")
                                            .HtmlAttributes(new
                                            {
                                                @class = ViewBag.months == 12 ? "k-state-active" : "",

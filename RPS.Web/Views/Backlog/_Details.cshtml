@@ -12,7 +12,7 @@
     <div class="form-group row">
         @Html.LabelFor(model => model.Title, htmlAttributes: new { @class = "col-sm-2 col-form-label" })
         <div class="col-sm-6">
-            @Html.Kendo().TextBoxFor(model => model.Title).HtmlAttributes(new { @class = "form-control" })
+            @Html.Kendo().TextBoxFor(model => model.Title)
             @Html.ValidationMessageFor(model => model.Title, "", new { @class = "text-danger" })
         </div>
     </div>
@@ -21,7 +21,7 @@
         @Html.LabelFor(model => model.Description, htmlAttributes: new { @class = "col-sm-2 col-form-label" })
         <div class="col-sm-6">
 
-            @Html.Kendo().TextAreaFor(model => model.Description).HtmlAttributes(new { @class = "form-control", style = "width: 100%; height: 60px;" })
+            @Html.Kendo().TextAreaFor(model => model.Description).HtmlAttributes(new { style = "width: 100%; height: 60px;" })
             @Html.ValidationMessageFor(model => model.Description, "", new { @class = "text-danger" })
         </div>
     </div>
